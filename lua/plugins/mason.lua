@@ -10,6 +10,7 @@ return {
       "pyright",
       "ruff-lsp",
       "ruff",
+      "prettierd",
     },
   },
 }
