@@ -3,10 +3,13 @@
 -- Add any additional keymaps here
 
 local keymap = vim.keymap
+local util = require("lazyvim.util")
 
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear Search" })
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>")
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
+
+keymap.set("n", "<leader>ft", function() util.float_term("pwsh.exe", nil) end, {desc = "Terminal (cwd)"})
 
 -- Map Ctrl+space to Copilot accept suggestions
 -- keymap.set("i", "<C-space>", 'copilot#accept("<C-space>")', { expr = true, noremap = true })
