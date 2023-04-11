@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "nvim"
+version = "1.0.0"
+description = "Virtual Environment for NeoVim"
+authors = ["dianchia <dianrui520@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pynvim = "^0.4.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
