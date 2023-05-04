@@ -9,6 +9,6 @@ return {
     require("mason-null-ls").setup({
       automatic_setup = true,
     }) -- require your null-ls config here (example below)
-    require("mason-null-ls").setup_handlers()
+    -- require("mason-null-ls").setup_handlers()
   end,
 }
