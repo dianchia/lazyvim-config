@@ -4,7 +4,11 @@ return {
     priority = 1000,
     opts = {
         flavour = "frappe",
-        transparent_background = false,
+        dim_inactive = {
+            enabled = true,
+            shade = "dark",
+            percentage = 0.15,
+        },
         integrations = {
             bufferline = true,
             leap = true,
