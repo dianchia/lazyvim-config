@@ -10,7 +10,11 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>")
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
 
 keymap.set("n", "<leader>ft", function()
-    util.float_term("pwsh.exe", nil)
+    if jit.os == "Windows" then
+        util.float_term("pwsh.exe", nil)
+    else
+        util.float_term("/usr/bin/zsh", nil)
+    end
 end, { desc = "Terminal (cwd)" })
 
 -- Windows
