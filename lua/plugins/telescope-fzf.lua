@@ -5,7 +5,6 @@ return {
         build = jit.os == "Windows"
                 and "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build"
             or "make",
-        -- build = "make",
         config = function()
             require("telescope").load_extension("fzf")
         end,
