@@ -11,9 +11,9 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
 
 keymap.set("n", "<leader>ft", function()
     if jit.os == "Windows" then
-        util.float_term("pwsh.exe", nil)
+        util.terminal.open("pwsh.exe", nil)
     else
-        util.float_term("/usr/bin/zsh", nil)
+        util.terminal.open("/usr/bin/zsh", nil)
     end
 end, { desc = "Terminal (cwd)" })
 

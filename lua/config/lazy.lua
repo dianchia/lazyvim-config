@@ -14,9 +14,11 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lsp.none-ls" },
         -- Formatting
         { import = "lazyvim.plugins.extras.formatting.prettier" },
+        { import = "lazyvim.plugins.extras.formatting.black" },
         -- Language Support
         { import = "lazyvim.plugins.extras.lang.json" },
         { import = "lazyvim.plugins.extras.lang.python" },
+        { import = "lazyvim.plugins.extras.lang.rust" },
         -- Misc
         { import = "lazyvim.plugins.extras.editor.leap" },
         { import = "lazyvim.plugins.extras.ui.mini-animate" },
