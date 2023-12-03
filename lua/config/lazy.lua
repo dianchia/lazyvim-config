@@ -14,7 +14,8 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lsp.none-ls" },
         -- Formatting
         { import = "lazyvim.plugins.extras.formatting.prettier" },
-        { import = "lazyvim.plugins.extras.formatting.black" },
+        -- This extras clashed with the config in conform.lua, which causes isort to not run
+        -- { import = "lazyvim.plugins.extras.formatting.black" },
         -- Language Support
         { import = "lazyvim.plugins.extras.lang.json" },
         { import = "lazyvim.plugins.extras.lang.python" },
