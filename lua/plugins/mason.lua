@@ -1,16 +1,17 @@
 return {
-  "williamboman/mason.nvim",
-  opts = {
-    ensure_installed = {
-      "stylua",
-      "shellcheck",
-      "shfmt",
-      "flake8",
-      "black",
-      "ruff-lsp",
-      "ruff",
-      "prettierd",
-      "rust-analyzer",
+    "williamboman/mason.nvim",
+    opts = {
+        ensure_installed = {
+            "stylua",
+            "shellcheck",
+            "shfmt",
+            "flake8",
+            "black",
+            "isort",
+            "ruff-lsp",
+            "ruff",
+            "prettierd",
+            "rust-analyzer",
+        },
     },
-  },
 }
