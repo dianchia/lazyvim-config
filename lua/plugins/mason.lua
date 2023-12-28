@@ -10,6 +10,7 @@ return {
       "ruff-lsp",
       "ruff",
       "prettierd",
+      "rust-analyzer",
     },
   },
 }
