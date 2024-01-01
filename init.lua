@@ -7,3 +7,4 @@ vim.g.python3_host_prog = jit.os == "Windows" and vim.fn.stdpath("config") .. "/
     or vim.fn.stdpath("config") .. "/.venv/bin/python"
 vim.cmd.colorscheme("catppuccin")
 vim.opt.foldmethod = "marker"
+vim.opt.pumblend = 0
