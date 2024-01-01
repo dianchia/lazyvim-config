@@ -8,6 +8,9 @@ opt.tabstop = 4
 opt.shiftwidth = 4
 
 opt.background = "dark"
+opt.pumblend = 0
 
 opt.backspace = "indent,eol,start"
 opt.iskeyword:append("-")
+
+-- opt.foldmethod = "marker"
