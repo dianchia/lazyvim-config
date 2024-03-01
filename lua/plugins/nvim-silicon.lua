@@ -3,7 +3,7 @@ return {
     lazy = true,
     cmd = "Silicon",
     keys = {
-        { "<leader>cS", ":Silicon<CR>", desc = "Make code screenshot with silicon" },
+        { "<leader>cS", ":Silicon<CR>", desc = "Make code screenshot with silicon", mode = { "v", "n" } },
     },
     opts = {
         font = "CaskaydiaCove Nerd Font Mono=34",
