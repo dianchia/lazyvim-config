@@ -11,32 +11,6 @@ require("lazy").setup({
     spec = {
         -- add LazyVim and import its plugins
         { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-        { import = "lazyvim.plugins.extras.lsp.none-ls" },
-        -- UI
-        { import = "lazyvim.plugins.extras.ui.mini-animate" },
-        { import = "lazyvim.plugins.extras.ui.edgy" },
-        -- Coding
-        { import = "lazyvim.plugins.extras.coding.yanky" },
-        { import = "lazyvim.plugins.extras.coding.copilot" },
-        -- Editor
-        { import = "lazyvim.plugins.extras.editor.aerial" },
-        { import = "lazyvim.plugins.extras.editor.leap" },
-        { import = "lazyvim.plugins.extras.editor.navic" },
-        { import = "lazyvim.plugins.extras.editor.symbols-outline" },
-        -- Formatting
-        { import = "lazyvim.plugins.extras.formatting.prettier" },
-        -- This extras clashed with the config in conform.lua, which causes isort to not run
-        -- { import = "lazyvim.plugins.extras.formatting.black" },
-        -- Language Support
-        { import = "lazyvim.plugins.extras.lang.docker" },
-        { import = "lazyvim.plugins.extras.lang.json" },
-        { import = "lazyvim.plugins.extras.lang.markdown" },
-        { import = "lazyvim.plugins.extras.lang.python" },
-        { import = "lazyvim.plugins.extras.lang.python-semshi" },
-        { import = "lazyvim.plugins.extras.lang.rust" },
-        -- Utils
-        { import = "lazyvim.plugins.extras.util.project" },
-        -- import/override with your plugins
         { import = "plugins" },
     },
     defaults = {
